@@ -5,15 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>INDEX</title>
+<title>LOGIN</title>
 </head>
 <body>
- <s:form action="HelloStrutsAction">
-  <s:submit value="HerroStruts"/>
- </s:form>
-
- <s:form action="WelcomeAction">
-   <s:submit values="Welcome"/>
- </s:form>
+ <s:property value="username"/>さん、ようこそ！
 </body>
 </html>
