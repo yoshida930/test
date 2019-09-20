@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.internousdev.webproj2.util .DBConnector;
+import com.internousdev.webproj2.util.DBConnector;
 
 public class LoginDAO {
 	public String username;
@@ -16,7 +16,7 @@ public class LoginDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-	String sql = "select * from users where user_name=? and password?";
+	String sql = "select * from users where user_name=? and password=?";
 	try{
 		PreparedStatement ps = con.prepareStatement(sql);
 		ps.setString(1, username);
