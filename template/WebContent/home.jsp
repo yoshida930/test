@@ -4,24 +4,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+
 <title>Home画面</title>
+
 </head>
 <body>
    <div id="header">
-   </div>
+    </div>
    <div id="main">
        <div id="top">
               <p>Home</p>
        </div>
        <div>
-           <s:form action="HomeAction">
+           <s:form action= "HomeAction">
              <s:submit value="商品購入"/>
            </s:form>
        </div>
    </div>
-   <div id="fotter">
+   <div id="footer">
    </div>
 
 </body>

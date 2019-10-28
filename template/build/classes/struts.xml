@@ -45,10 +45,10 @@
     <result name="success">buyItemComplete.jsp</result>
    </action>
 
-   <action name="MyPageAction" class="com.internousdev.template.action.MyPageAction"
-     method="execute">
-    <result name="success">MyPage.jsp</result>
-   </action>
+<!--    <action name="MyPageAction" class="com.internousdev.template.action.MyPageAction" -->
+<!--      method="execute"> -->
+<!--     <result name="success">MyPage.jsp</result> -->
+<!--    </action> -->
 
    </package>
 </struts>
