@@ -28,7 +28,7 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 			session.put("total_price",myPageDTO.getTotalPrice());
 			session.put("total_count",myPageDTO.getTotalCount());
 			session.put("total_payment",myPageDTO.getPayment());
-			session.put("messeage","");
+			session.put("message","");
 		//商品履歴を削除する場合
 		}else if(deleteFlg.equals("1")){
 			delete();
@@ -58,7 +58,7 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		this.deleteFlg=deleteFlg;
 	}
 
-	public Map<String,Object> getsession() {
+	public Map<String,Object> getSession() {
 		return session;
 	}
 

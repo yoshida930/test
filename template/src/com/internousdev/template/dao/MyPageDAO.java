@@ -17,9 +17,9 @@ public class MyPageDAO {
 		MyPageDTO myPageDTO = new MyPageDTO();
 
 		String sql="SELECT iit.item_name,ubit.total_price,ubit.total_count,"
-				+ "ubit.pay FROM user_buyitem_transaction ubit LEFT JOIN item_info_transaction iit ON"
-				+ "ubit.item_transaction_id = iit.id WHERE ubit.item_transaction_id = ? AND"
-				+ "ubit.user_master_id = ? ORDER BY ubit.insert_date DESC";
+				+ " ubit.pay FROM user_buy_item_transaction ubit LEFT JOIN item_info_transaction iit ON"
+				+ " ubit.item_transaction_id = iit.id WHERE ubit.item_transaction_id = ? AND"
+				+ " ubit.user_master_id = ? ORDER BY ubit.insert_date DESC";
 		try{
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,item_transaction_id);
@@ -48,8 +48,8 @@ public class MyPageDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-		String sql = "DERETE FROM user_buy_item_transaction WHERE"
-				+ "item_transaction_id = ? AND user_master_id = ?";
+		String sql = "DELETE FROM user_buy_item_transaction WHERE"
+				+ " item_transaction_id = ? AND user_master_id = ?";
 		PreparedStatement ps;
 		int result=0;
 

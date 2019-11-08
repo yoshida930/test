@@ -9,12 +9,12 @@
 <title>BuyItem画面</title>
 </head>
 <body>
-    <div id="header">
+	<div id="header">
     </div>
-    <div id="main">
-        <div id="top">
-            <p>BuyItem</p>
-        </div>
+	<div id="main">
+		<div id="top">
+			<p>BuyItem</p>
+		</div>
         <div>
         <s:form action="BuyItemAction">
             <table>
